@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bruno Ace SC", cursive;
+  line-height: 1.5;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+  font-family: "Bruno Ace SC", cursive;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  color: #d1d1d1;
+  justify-content: space-between;
+}
+.menu li {
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 72px 0;
+}
+.header .img-container {
+  width: 50%;
+}
+.header .intro {
+  padding: 160px 0;
+  width: 50%;
+}
+.header .intro h2 {
+  color: #ffffff;
+}
+.header .intro h1 {
+  color: #00ffa3;
+  font-size: 128px;
+  text-align: right;
+}
+.header .intro .btn {
+  font-size: 16px;
+  border: none;
+  display: block;
+  margin-left: auto;
+}
+
+.bg-img {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+}
+.bg-img section.intro {
+  display: flex;
+  padding: 160px 0;
+  gap: 24px;
+}
+.bg-img section.intro .content {
+  color: #ffffff;
+  width: 40.6%;
+}
+.bg-img section.intro .content p {
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+.bg-img section.intro .img-container {
+  display: flex;
+  justify-content: space-between;
+  width: 57.6%;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+.about-cards {
+  width: 49.1%;
+  padding: 206px 0;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.about-cards li {
+  border: 1px solid #e3e3e3;
+  padding: 16px;
+  width: 306px;
+}
+.about-cards li h3 {
+  font-size: 20px;
+}
+.about-cards li p {
+  font-size: 16px;
+}
+.about .content {
+  width: 40.1%;
+  padding-top: 160px;
+}
+.about .content h2 {
+  margin-bottom: 36px;
+}
+
+.bg-linear {
+  background-image: linear-gradient(#01021e 89%, #050014 100%);
+}
+.bg-linear .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+.bg-linear .contact h2 {
+  padding: 127px 0;
+}
+.bg-linear .contact .social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 96px 0;
+}
+.bg-linear .contact .social img {
+  width: 162px;
+  height: 162px;
+  border-radius: 40px;
+}
+.bg-linear .contact .social img:hover {
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+}
+
+.projects {
+  padding: 160px 0;
+}
+.projects h2 {
+  width: 746px;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+.projects .content {
+  display: flex;
+  gap: 24px;
+}
+.projects .content .left {
+  width: 32.1%;
+}
+.projects .content .right {
+  width: 66.5%;
+}
+.projects .content .right .up {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.projects .content .right .up .intro {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects .content .right .up .intro .btn {
+  background-color: #000000;
+  color: #fff;
+  align-self: flex-start;
+}
+.projects .content .right .down {
+  display: flex;
+  gap: 24px;
+}
+
+.footer {
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 0;
+}
+.footer p {
+  font-size: 16px;
+}/*# sourceMappingURL=all.css.map */
