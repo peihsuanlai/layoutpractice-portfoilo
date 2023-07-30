@@ -101,6 +101,10 @@ p {
   padding-top: 40px;
   padding-bottom: 24px;
 }
+.menu a {
+  text-decoration: none;
+  color: #d1d1d1;
+}
 
 .header {
   display: flex;
@@ -111,23 +115,23 @@ p {
 .header .img-container {
   width: 50%;
 }
-.header .intro {
-  padding: 160px 0;
+.header .person {
   width: 50%;
 }
-.header .intro h2 {
+.header .person h2 {
   color: #ffffff;
 }
-.header .intro h1 {
+.header .person h1 {
   color: #00ffa3;
   font-size: 128px;
   text-align: right;
 }
-.header .intro .btn {
+.header .person .btn {
   font-size: 16px;
   border: none;
   display: block;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .bg-img {
@@ -142,7 +146,7 @@ p {
   color: #ffffff;
   width: 40.6%;
 }
-.bg-img section.intro .content p {
+.bg-img section.intro p {
   margin-top: 36px;
   margin-bottom: 32px;
 }
@@ -167,11 +171,12 @@ p {
   border: 1px solid #e3e3e3;
   padding: 16px;
   width: 306px;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.0784313725);
 }
-.about-cards li h3 {
+.about-cards h3 {
   font-size: 20px;
 }
-.about-cards li p {
+.about-cards p {
   font-size: 16px;
 }
 .about .content {
@@ -191,21 +196,21 @@ p {
   align-items: center;
   color: #ffffff;
 }
-.bg-linear .contact h2 {
+.bg-linear h2 {
   padding: 127px 0;
 }
-.bg-linear .contact .social {
+.bg-linear .social {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 96px 0;
 }
-.bg-linear .contact .social img {
+.bg-linear img {
   width: 162px;
   height: 162px;
   border-radius: 40px;
 }
-.bg-linear .contact .social img:hover {
+.bg-linear img:hover {
   box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
 }
 
@@ -221,29 +226,31 @@ p {
   display: flex;
   gap: 24px;
 }
-.projects .content .left {
+.projects .left {
   width: 32.1%;
 }
-.projects .content .right {
+.projects .right {
   width: 66.5%;
 }
-.projects .content .right .up {
+.projects .up {
   display: flex;
   gap: 24px;
   margin-bottom: 28px;
 }
-.projects .content .right .up .intro {
-  font-size: 16px;
+.projects .up .intro {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.projects .content .right .up .intro .btn {
+.projects .up .intro .des {
+  font-size: 16px;
+}
+.projects .up .intro .btn {
   background-color: #000000;
   color: #fff;
   align-self: flex-start;
 }
-.projects .content .right .down {
+.projects .down {
   display: flex;
   gap: 24px;
 }

@@ -45,6 +45,10 @@ p {
     padding-top: 40px;
     padding-bottom: 24px;
   }
+  a {
+    text-decoration: none;
+    color: #d1d1d1;
+  }
 }
 
 .header {
@@ -55,8 +59,7 @@ p {
   .img-container {
     width: 50%;
   }
-  .intro {
-    padding: 160px 0;
+  .person {
     width: 50%;
     h2 {
       color: #ffffff;
@@ -71,6 +74,7 @@ p {
       border: none;
       display: block;
       margin-left: auto;
+      cursor: pointer;
     }
   }
 }
@@ -84,10 +88,10 @@ p {
     .content {
       color: #ffffff;
       width: 40.6%;
-      p {
-        margin-top: 36px;
-        margin-bottom: 32px;
-      }
+    }
+    p {
+      margin-top: 36px;
+      margin-bottom: 32px;
     }
     .img-container {
       display: flex;
@@ -110,12 +114,13 @@ p {
       border: 1px solid #e3e3e3;
       padding: 16px;
       width: 306px;
-      h3 {
-        font-size: 20px;
-      }
-      p {
-        font-size: 16px;
-      }
+      box-shadow: 4px 4px 4px 0 #00000014;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
     }
   }
   .content {
@@ -134,22 +139,22 @@ p {
     justify-content: space-between;
     align-items: center;
     color: #ffffff;
-    h2 {
-      padding: 127px 0;
-    }
-    .social {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      padding: 96px 0;
-      img {
-        width: 162px;
-        height: 162px;
-        border-radius: 40px;
-        &:hover {
-          box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
-        }
-      }
+  }
+  h2 {
+    padding: 127px 0;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 96px 0;
+  }
+  img {
+    width: 162px;
+    height: 162px;
+    border-radius: 40px;
+    &:hover {
+      box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
     }
   }
 }
@@ -164,32 +169,34 @@ p {
   .content {
     display: flex;
     gap: 24px;
-    .left {
-      width: 32.1%;
-    }
-    .right {
-      width: 66.5%;
-      .up {
-        display: flex;
-        gap: 24px;
-        margin-bottom: 28px;
-        .intro {
-          font-size: 16px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          .btn {
-            background-color: #000000;
-            color: #fff;
-            align-self: flex-start;
-          }
-        }
+  }
+  .left {
+    width: 32.1%;
+  }
+  .right {
+    width: 66.5%;
+  }
+  .up {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 28px;
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .des {
+        font-size: 16px;
       }
-      .down {
-        display: flex;
-        gap: 24px;
+      .btn {
+        background-color: #000000;
+        color: #fff;
+        align-self: flex-start;
       }
     }
+  }
+  .down {
+    display: flex;
+    gap: 24px;
   }
 }
 
